@@ -3,49 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="main.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <title>HTML Portfolio</title>
 </head>
 <body>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target="#portfolio-collapse-menu">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
 
-  <!--
-    Previous project placeholder begins
-  -->
-  <div class="header">
-    <h1>Nate | Militant Mario</h1>
-    <h2>UX/UI Designer - Linux Administrator - Full-Stack Developer - Software Engineer</h2>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+
+    <!-- /.navbar-collapse -->
   </div>
-  <div class="tagline">
-    <h3>Learn More About Me</h3>
-    <p>
-      I am Nathan, and as people may know me as Militant Mario. A lot of what I engage in consists of coding, gaming, livestreaming, music, and playing saxophone. I created this site as sort of an online portfolio of myself and to gain experience in website development. I will expand on this later including but not limited to: A blog, custom forums, and all my project's information. This site will continue to grow, but keep in mind it will be subject to change and may be down at any time.
-    </p>
+  <!-- /.container-fluid -->
+</nav>
+
+<!-------------->
+<!-- CAROUSEL -->
+<!-------------->
+<div id="portfolio-carousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#portfolio-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="1"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>Nate | Militant Mario</h1>
+          <p>UX/UI Designer - Linux Administrator - Full-Stack Developer - Software Engineer</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>About me</h1>
+          <p>I am Nathan, and as people may know me as Militant Mario. I will expand on this later including but not
+            limited to: A blog, custom forums, and all my project's information.</p>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="container">
+        <div class="carousel-caption">
+          <h1>What I do</h1>
+          <p></p>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="skills">
-    <h3>My Skills</h3>
-    <p>I enjoy writing front-end code with these technologies</p>
-    <ul>
-      <li>HTML/CSS</li>
-      <li>React</li>
-      <li>Node.js</li>
-    </ul>
+  <a class="left carousel-control" href="#portfolio-carousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#portfolio-carousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="marketing">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-" aria-hidden="true"></span>
+        <h2>Web Developement</h2>
+        <p>HTML5 | CSS3 | ES6 | Node.js | React | Webpack</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+        <h2>Ethical Hacking</h2>
+        <p>Forensics | Cryptography</p>
+      </div>
+      <div class="col-md-4">
+        <span class="glyphicon glyphicon-hdd" aria-hidden="true"></span>
+        <h2>Linux Administration</h2>
+        <p>Python | VMWare | Unix | Oracle | Cisco | Puppet</p>
+      </div>
+    </div>
   </div>
-  <div class="contact">
-    <h3>How to contact me</h3>
-    <p>
-      The easiest way to contact me is via steam:
-      <a target="_blank" href="http://steamcommunity.com/profiles/76561198117333959">Steam</a>
-    </p>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="text-center">
+      <h3>Made with <i class="fa fa-heart"></i> by MilitantMario</h3>
+      <p>Test</p>
+      <a target="_blank" href="http://steamcommunity.com/profiles/76561198117333959"><i
+        class="fa fa-steam-square fa-2x"></i></a>
+      <a target="_blank" href="http://steamcommunity.com/profiles/76561198117333959"><i class="fa fa-trello fa-2x"></i></a>
+      <a target="_blank" href="http://steamcommunity.com/profiles/76561198117333959"><i class="fa fa-twitch fa-2x"></i></a>
+      <a target="_blank" href="http://github.com/MilitantMario"><i class="fa fa-github fa-2x"></i></a>
+      <a target="_blank" href="http://steamcommunity.com/profiles/76561198117333959"><i
+        class="fa fa-envelope fa-2x"></i></a>
+    </div>
   </div>
-  <!--
-    Previous project placeholder ends
-    (unused pieces will be deleted at the last task)
-  -->
+</footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--
+  Previous project placeholder begins
+-->
+<!--
+  Previous project placeholder ends
+  (unused pieces will be deleted at the last task)
+-->
+
+
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
 </body>
 </html>

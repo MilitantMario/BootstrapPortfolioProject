@@ -88,6 +88,9 @@ footer {
   text-shadow: 1px 1px 1px black;
   padding: 40px 0;
 }
+footer a {
+  margin: 10px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
